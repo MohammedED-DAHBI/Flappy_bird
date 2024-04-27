@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Arcade Classic";
+    src: url(fonts/ARCADECLASSIC.TTF) format("truetype");
+}
+@font-face {
+    font-family: "Flappybirdy";
+    src: url(fonts/FlappybirdyRegular-KaBW.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Flappybird";
+    src: url(fonts/flappy-bird-font.ttf) format("truetype");
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Arcade Classic";
+    background-image: url(images/main_background.png);
+}
+canvas {
+    border:1px solid #d3d3d3;
+    background: url("images/flappy_bird_backdrop_by_lenaxux_dg34rsu.png");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* width: 70vw;
+    height: 70vh; */
+    margin: auto;
+    z-index: 2;
+    opacity: 0.9;
+    border-radius: 8px;
+    border: #282928;
+}
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+div {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    background: #282928;
+    z-index: 1;    
+}
+
+@media screen and (max-width: 486px) {
+    canvas {
+        width: 100vw;
+        height: auto;
+    }
+}
